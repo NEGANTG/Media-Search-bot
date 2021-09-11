@@ -27,14 +27,14 @@ async def start(bot, cmd):
                 ident, file_id = cmd.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=cmd.from_user.id,
-                    text="**Please Join My Updates Channel to use this Bot!**",
+                    text="**Due to overload Only the Channels Subscribers can use the bot. So, kindly join the channel using the below button and then try again.\n സുഹൃത്തേ മൂവി ഡൗൺലോഡ് ചെയ്യാൻ ആദ്യം ഈ ചാനലിൽ ജോയിൻ ചെയ്യുക. എന്നിട്ട് വീണ്ടും ശ്രമിക്കുക**",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                                InlineKeyboardButton("🌀 𝗝𝗢𝗜𝗡 𝗢𝗨𝗥 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 🌀", url=invite_link.invite_link)
                             ],
                             [
-                                InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{file_id}")
+                                InlineKeyboardButton(" 🔄 𝗧𝗥𝗬 𝗔𝗚𝗔𝗜𝗡 🔄", callback_data=f"checksub#{file_id}")
                             ]
                         ]
                     ),
@@ -65,9 +65,8 @@ async def start(bot, cmd):
                 if f_caption is None:
                     f_caption = f"{files.file_name}"
                 buttons = [
-                    [
-                        InlineKeyboardButton('Search again', switch_inline_query_current_chat=''),
-                        InlineKeyboardButton('More Bots', url='https://t.me/subin_works/122')
+                    [                      
+                        InlineKeyboardButton('🔰 𝗠𝗢𝗩𝗜𝗘𝗦 𝗙𝗔𝗖𝗧𝗢𝗥𝗬 ™ 🔰', url='https://t.me/MF_Linkz')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -86,7 +85,7 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                        InlineKeyboardButton("🌀 𝗝𝗢𝗜𝗡 𝗢𝗨𝗥 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 🌀", url=invite_link.invite_link)
                     ]
                 ]
             )
@@ -99,11 +98,11 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("Other Bots", url="https://t.me/subin_works/122")
+                        InlineKeyboardButton("𝗢𝗪𝗡𝗘𝗥", url="https://t.me/AkFronic"),
+                        InlineKeyboardButton("𝗖𝗥𝗘𝗔𝗧𝗢𝗥", url="https://t.me/NEGANX")
                     ],
                     [
-                        InlineKeyboardButton("About", callback_data="about")
+                        InlineKeyboardButton("𝗦𝗢𝗨𝗥𝗖𝗘 𝗖𝗢𝗗𝗘", url="https://t.me/")
                     ]
                 ]
             )
