@@ -66,7 +66,7 @@ async def start(bot, cmd):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [                      
-                        InlineKeyboardButton('🔰 𝗠𝗢𝗩𝗜𝗘𝗦 𝗙𝗔𝗖𝗧𝗢𝗥𝗬 ™ 🔰', url='https://t.me/MF_Linkz')
+                        InlineKeyboardButton('🔰 𝗠𝗢𝗩𝗜𝗘𝗦 𝗙𝗔𝗖𝗧𝗢𝗥𝗬 🔰', url='https://t.me/MF_Linkz')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -98,11 +98,11 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("𝗢𝗪𝗡𝗘𝗥", url="https://t.me/AkFronic"),
-                        InlineKeyboardButton("𝗖𝗥𝗘𝗔𝗧𝗢𝗥", url="https://t.me/NEGANX")
+                        InlineKeyboardButton("𝘿𝙀𝙑𝙀𝙇𝙊𝙋𝙀𝙍", url="https://t.me/AkFronic"),
+                        InlineKeyboardButton("𝘾𝙍𝙀𝘼𝙏𝙊𝙍", url="https://t.me/NEGANX")
                     ],
                     [
-                        InlineKeyboardButton("𝗦𝗢𝗨𝗥𝗖𝗘 𝗖𝗢𝗗𝗘", url="https://t.me/")
+                        InlineKeyboardButton("𝙎𝙊𝙐𝙍𝘾𝙀 𝘾𝙊𝘿𝙀", url="https://t.me/nokkiirunnoippokittum")
                     ]
                 ]
             )
@@ -191,8 +191,8 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Update Channel', url='https://t.me/subin_works'),
-            InlineKeyboardButton('Source Code', url='https://github.com/subinps/Media-Search-bot')
+            InlineKeyboardButton('Update Channel', url='https://t.me/Mf_Linkz'),
+            InlineKeyboardButton('Source Code', url='https://t.me/nokkiirunnoippokittum')
         ]
         ]
-    await message.reply(text="<b>Developer : <a href='https://t.me/subinps_bot'>SUBIN</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/subinps/Media-Search-bot'>Click here</a>\nUpdate Channel : <a href='https://t.me/subin_works'>XTZ Bots</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="Yep", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
