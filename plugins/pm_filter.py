@@ -81,10 +81,10 @@ async def filter(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [ᴍᴀsᴛᴇʀ](https://t.me/MFLinkzBot)</b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Mᴀsᴛᴇʀ ◢ ◤](https://t.me/MFLinkzBot)</b>", reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
-                await message.reply_text(f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [ʟᴇᴠɪ ᴀᴄᴋᴇʀᴍᴀɴ](https://t.me/MFLinkzBot)</b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Mᴀsᴛᴇʀ ◢ ◤](https://t.me/MFLinkzBot)</b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
 
         data = BUTTONS[keyword]
@@ -100,9 +100,9 @@ async def filter(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [ʟᴇᴠɪ ᴀᴄᴋᴇʀᴍᴀɴ](https://t.me/MFLinkzBot)</b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_photo(photo=poster, caption=f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Mᴀsᴛᴇʀ ◢ ◤](https://t.me/MFLinkzBot)</b>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
-            await message.reply_text(f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [ʟᴇᴠɪ ᴀᴄᴋᴇʀᴍᴀɴ](https://t.me/MFLinkzBot)</b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_text(f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Mᴀsᴛᴇʀ ◢ ◤](https://t.me/MFLinkzBot)</b>", reply_markup=InlineKeyboardMarkup(buttons))
 
 @Client.on_message(filters.text & filters.group & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.group & filters.incoming)
 async def group(client, message):
@@ -145,9 +145,9 @@ async def group(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [ʟᴇᴠɪ ᴀᴄᴋᴇʀᴍᴀɴ](https://t.me/MFLinkzBot)</b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Mᴀsᴛᴇʀ ◢ ◤](https://t.me/MFLinkzBot)</b>", reply_markup=InlineKeyboardMarkup(buttons))
             else:
-                await message.reply_text(f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [ʟᴇᴠɪ ᴀᴄᴋᴇʀᴍᴀɴ](https://t.me/MFLinkzBot)</b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Mᴀsᴛᴇʀ ◢ ◤](https://t.me/MFLinkzBot)</b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
 
         data = BUTTONS[keyword]
@@ -163,9 +163,9 @@ async def group(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [ʟᴇᴠɪ ᴀᴄᴋᴇʀᴍᴀɴ](https://t.me/MFLinkzBot)</b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_photo(photo=poster, caption=f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Mᴀsᴛᴇʀ ◢ ◤](https://t.me/MFLinkzBot)</b>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
-            await message.reply_text(f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [ʟᴇᴠɪ ᴀᴄᴋᴇʀᴍᴀɴ](https://t.me/MFLinkzBot)</b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_text(f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Mᴀsᴛᴇʀ ◢ ◤](https://t.me/MFLinkzBot)</b>", reply_markup=InlineKeyboardMarkup(buttons))
 
     
 def get_size(size):
@@ -221,7 +221,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)+1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("▫️ ʙᴀᴄᴋ ▫️", callback_data=f"back_{int(index)+1}_{keyword}"),InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)+1}_{keyword}")]
+                    [InlineKeyboardButton("▫️ ʙᴀᴄᴋ ▫️", callback_data=f"back_{int(index)+1}_{keyword}"),InlineKeyboardButton("▪️ɴᴇxᴛ▪️", callback_data=f"next_{int(index)+1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(f"ᴘᴀɢᴇs {int(index)+2}/{data['total']}", callback_data="pages")]
@@ -259,7 +259,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)-1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("▫️ ʙᴀᴄᴋ ▫️", callback_data=f"back_{int(index)-1}_{keyword}"),InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)-1}_{keyword}")]
+                    [InlineKeyboardButton("▫️ ʙᴀᴄᴋ ▫️", callback_data=f"back_{int(index)-1}_{keyword}"),InlineKeyboardButton("▪️ɴᴇxᴛ▪️", callback_data=f"next_{int(index)-1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(f"ᴘᴀɢᴇs {int(index)}/{data['total']}", callback_data="pages")]
