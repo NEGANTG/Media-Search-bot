@@ -54,7 +54,7 @@ async def filter(client, message):
         if files:
             for file in files:
                 file_id = file.file_id
-                filename = f"🔻{get_size(file.file_size)} 🔹 {file.file_name}"
+                filename = f"[{get_size(file.file_size)}] [{file.file_name}]"
                 btn.append(
                     [InlineKeyboardButton(text=f"{filename}",callback_data=f"subinps#{file_id}")]
                     )
@@ -81,10 +81,10 @@ async def filter(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Mᴀsᴛᴇʀ ◢ ◤](https://t.me/MFLinkzBot)</b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Mᴀsᴛᴇʀ ◢ ◤](https://t.me/MFLinkzBot)</b>\n\n<b>©️ ᴍғ ᴄᴏᴍᴍᴜɴɪᴛʏ </b>", reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
-                await message.reply_text(f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Mᴀsᴛᴇʀ ◢ ◤](https://t.me/MFLinkzBot)</b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Mᴀsᴛᴇʀ ◢ ◤](https://t.me/MFLinkzBot)</b>\n\n<b>©️ ᴍғ ᴄᴏᴍᴍᴜɴɪᴛʏ </b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
 
         data = BUTTONS[keyword]
@@ -100,9 +100,9 @@ async def filter(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Mᴀsᴛᴇʀ ◢ ◤](https://t.me/MFLinkzBot)</b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_photo(photo=poster, caption=f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Mᴀsᴛᴇʀ ◢ ◤](https://t.me/MFLinkzBot)</b>\n\n<b>©️ ᴍғ ᴄᴏᴍᴍᴜɴɪᴛʏ </b>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
-            await message.reply_text(f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Mᴀsᴛᴇʀ ◢ ◤](https://t.me/MFLinkzBot)</b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_text(f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Mᴀsᴛᴇʀ ◢ ◤](https://t.me/MFLinkzBot)</b>\n\n<b>©️ ᴍғ ᴄᴏᴍᴍᴜɴɪᴛʏ </b>", reply_markup=InlineKeyboardMarkup(buttons))
 
 @Client.on_message(filters.text & filters.group & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.group & filters.incoming)
 async def group(client, message):
@@ -120,14 +120,10 @@ async def group(client, message):
         if files:
             for file in files:
                 file_id = file.file_id
-                filename = f"{file.file_name}"
-                filesize = f"{get_size(file.file_size)}"
+                filename = f"[{get_size(file.file_size)}] [{file.file_name}]"
                 btn.append(
-            [InlineKeyboardButton(text=f"{filename}",callback_data=f"subinps#{file_id}")]
-        )    
-        buttons.append(
-            [InlineKeyboardButton(text=f"{filesize}",callback_data=f"subinps#{file_id}")]
-        )
+                    [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=subinps_-_-_-_{file_id}")]
+                )
         else:
             return
         if not btn:
@@ -149,9 +145,9 @@ async def group(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Mᴀsᴛᴇʀ ◢ ◤](https://t.me/MFLinkzBot)</b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Mᴀsᴛᴇʀ ◢ ◤](https://t.me/MFLinkzBot)</b>\n\n<b>©️ ᴍғ ᴄᴏᴍᴍᴜɴɪᴛʏ </b>", reply_markup=InlineKeyboardMarkup(buttons))
             else:
-                await message.reply_text(f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Mᴀsᴛᴇʀ ◢ ◤](https://t.me/MFLinkzBot)</b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Mᴀsᴛᴇʀ ◢ ◤](https://t.me/MFLinkzBot)</b>\n\n<b>©️ ᴍғ ᴄᴏᴍᴍᴜɴɪᴛʏ </b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
 
         data = BUTTONS[keyword]
@@ -167,9 +163,9 @@ async def group(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Mᴀsᴛᴇʀ ◢ ◤](https://t.me/MFLinkzBot)</b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_photo(photo=poster, caption=f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Mᴀsᴛᴇʀ ◢ ◤](https://t.me/MFLinkzBot)</b>\n\n<b>©️ ᴍғ ᴄᴏᴍᴍᴜɴɪᴛʏ </b>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
-            await message.reply_text(f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Mᴀsᴛᴇʀ ◢ ◤](https://t.me/MFLinkzBot)</b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_text(f"<b>•ᴍᴏᴠɪᴇ / sᴇʀɪᴇs : {search} ‌‌‌‌‎</b>\n<b>•ᴄʜᴀɴɴᴇʟ : [@ᴍғ_ʟɪɴᴋᴢ](https://t.me/MF_Linkz)</b>\n<b>•ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Mᴀsᴛᴇʀ ◢ ◤](https://t.me/MFLinkzBot)</b>\n\n<b>©️ ᴍғ ᴄᴏᴍᴍᴜɴɪᴛʏ </b>", reply_markup=InlineKeyboardMarkup(buttons))
 
     
 def get_size(size):
